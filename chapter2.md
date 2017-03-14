@@ -32,8 +32,8 @@ We pass it the value of ESTABLISHED to allow packets that are part of an existin
 -j ACCEPT: This specifies the target of matching packets. Here, we tell iptables that packets that match the preceding criteria should be accepted and allowed through.
 
 ```
-sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT
-sudo iptables -A INPUT -p tcp --dport 80 -j ACCEPT
+$ sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT
+$ sudo iptables -A INPUT -p tcp --dport 80 -j ACCEPT
 ```
 
 * Rules apply from top to bottom
@@ -52,6 +52,8 @@ $ sudo iptables -P INPUT DROP
 ---
 ## Saving Changes
 Changes from `iptables` is not persistent (so that a system reboot can reset them) =>
-`$ sudo apt-get update && sudo apt-get install iptables-persistent` on Debian to install the userspace program to save changes
 
-Whenever content of `iptables` changes, run `sudo invoke-rc.d iptables-persistent save`
+```$ sudo apt-get update && sudo apt-get install iptables-persistent```
+ on Debian to install the userspace program to save changes
+
+Whenever content of `iptables` changes, run `$ sudo invoke-rc.d iptables-persistent save`

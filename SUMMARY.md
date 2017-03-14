@@ -1,5 +1,5 @@
 # Summary
 
-* [Bash](chapter1.md)
-* [iptables](chapter2.md)
-* [vi / vim](chapter3.md)
+* [Chapter 1 Bash](chapter1.md)
+* [Chapter 2 iptables](chapter2.md)
+* [Chapter 3 vi / vim](chapter3.md)
