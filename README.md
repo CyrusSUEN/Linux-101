@@ -1,6 +1,6 @@
-# My Awesome Book
+# My Linux notes
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+This file file serves as book's preface, a place to describe book's content and ideas.
 
 
 
